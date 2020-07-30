@@ -35,16 +35,16 @@ scenario:
   test_sequence:
     - dependency
     - lint
-    #- destroy
-    #- dependency
-    #- syntax
-    #- create
-    #- prepare
-    #- converge
+    # - destroy
+    # - dependency
+    # - syntax
+    # - create
+    # - prepare
+    # - converge
     # -   idempotence
-    #- side_effect
-    #- verify
-    #- destroy
+    # - side_effect
+    # - verify
+    # - destroy
 
 verifier:
   name: testinfra
