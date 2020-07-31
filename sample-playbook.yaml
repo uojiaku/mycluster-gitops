@@ -10,5 +10,5 @@
         state: latest
     - name: ensure apache is running
       service:
-        name:httpd
+        name: httpd
         state: started
