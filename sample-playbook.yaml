@@ -12,3 +12,9 @@
       service:
         name: httpd
         state: started
+    - name: experimental module
+      nekic:
+        test:yes
+       badIndentation: oh_no
+
+
