@@ -16,3 +16,8 @@
       nekic:
         test: yes
         badIndentation: oh_no
+    # comment explaining slack integration
+    - name: add slack integration
+      slack:
+        badIndentation: bad
+        badSpacing: yikes
