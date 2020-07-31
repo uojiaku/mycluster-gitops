@@ -8,15 +8,7 @@ pipeline {
 
     stage ('Get latest code') {
       steps {
-
-        git {
-           url('https://github.com/gnekic/mycluster-gitops.git')
-           remote {
-             github('gnekic/mycluster-gitops')
-             refspec('+refs/pull/*:refs/remotes/origin/pr/*')
-           }
-           branch('${sha1}')
-        }
+        git branch: '${sha1}', url: 'https://github.com/gnekic/mycluster-gitops.git'
       }
     }
 
