@@ -8,7 +8,14 @@ pipeline {
 
     stage ('Get latest code') {
       steps {
-        checkout scm
+
+        git {
+           remote {
+             github('test-owner/test-project')
+             refspec('+refs/pull/*:refs/remotes/origin/pr/*')
+           }
+           branch('${sha1}')
+        }
       }
     }
 
