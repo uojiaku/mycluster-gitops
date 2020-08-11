@@ -1,3 +1,5 @@
 ---
+host:localhost
 name:hello
 shell:yum
+
