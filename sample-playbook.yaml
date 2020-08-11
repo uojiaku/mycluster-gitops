@@ -1,7 +1,7 @@
 ---
 - name: Playbook
-  hosts: webservers
-  become: yes
+  hosts:webservers
+  become:yes
   become_user: root
   tasks:
     - name: ensure apache is at the latest version
